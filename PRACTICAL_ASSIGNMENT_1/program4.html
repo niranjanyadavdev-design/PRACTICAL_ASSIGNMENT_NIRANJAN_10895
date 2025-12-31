@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7a7a87;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            font-weight: normal;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>student registration form</h1>
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="fathers name">Fathers name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="mothers name">mothers Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="school name">School Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your school name" required>
+            </div>
+            <div class="form-group">
+                <label>subjects in 10+2</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="eventType" value="math" checked>math</label>
+                    <label><input type="radio" name="eventType" value="bio">bio</label>
+                    <label><input type="radio" name="eventType" value="social science">social science</label>
+                    <label><input type="radio" name="eventType" value="sanskrit">sanskrit</label>
+                    <label><input type="radio" name="eventType" value="english">english</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>choose course in collage</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="diet[]" value="btech">btech</label>
+                    <label><input type="checkbox" name="diet[]" value="bca">bca</label>
+                    <label><input type="checkbox" name="diet[]" value="bsc"> bsc</label>
+                    <label><input type="checkbox" name="diet[]" value="none"> None</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">States</label>
+                <select id="country" name="country">
+                    <option value="">-- Please select --</option>
+                    <option value="usa">ranchi</option>
+                    <option value="can">chhatisgarh</option>
+                    <option value="uk">bihar</option>
+                    <option value="aus">jharkhand</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
